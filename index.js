@@ -10,6 +10,7 @@ app.use(
 );
 
 app.use("/playlists", require("./routes/playlists"));
+app.use("/tracks", require("./routes/tracks"));
 
 app.listen(port, (err) => {
   if (err) {
